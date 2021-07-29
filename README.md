@@ -3,7 +3,7 @@
 Author:[Gabriel Ayuel](https://github.com/ayuelgarang105/Python_MusicPlayer.git)  
   
 # Description  
-Music Player is a web appliction that music listeners can use to listen to songs.
+Music Player is a web appliction that music listeners can use to listen to songs
 
 ## User Story  
 As a user, I would like to:
