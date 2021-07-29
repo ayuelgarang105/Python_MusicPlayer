@@ -1,63 +1,106 @@
-# My music
-![](https://imgur.com/e4gFXK0.png)
-My music is a cloud music player which allows you to add and listen songs from anywhere in the world.
+# MUSIC PLAYER
 
-### Features
-It allows you to:
- - Add new albums 
+Author:[Gabriel Ayuel](https://github.com/ayuelgarang105/Python_MusicPlayer.git)  
+  
+# Description  
+Music Player is a web appliction that music listeners can use to listen to songs.
 
-  ![album](https://imgur.com/t57ukkK.png)
+## User Story  
+As a user, I would like to:
 
- - Add songs to Albums
+* Sign in with the application to start using.
+* Add album
+* Remove album
+* Add songs
+* Delete song
+  
+## Setup and installations
+* Fork the data .
+* git clone the gallery repo.
+* Activate a virtual environment on terminal: `source virtual/bin/activate`
+* Install all the requirements found in requirements file.
+* On your terminal run `python3.8 manage.py runserver`
 
-   ![](https://imgur.com/swOZKEU.png)
-
- - Search for songs and Albums
-
-   ![](https://imgur.com/YpxVFah.png)
 
 
-### Installing Django 
+## Getting started
 
-Either install from packages by typing these commands in your terminal
-```
-sudo apt-get update
-sudo apt-get install python-django
-```
-You can confirm whether its installed or not by typing 
-```
-django-admin --version
-```
+### Prerequisites
+* python3.8
+* virtual environment
+* pip
 
-Other way is installing by using pip 
+#### Clone the Repo 
+```bash
+git clone https://github.com/ayuelgarang105/Python_MusicPlayer.git
 ```
-sudo apt-get update
+#### Initialize git and add the remote repository
+```bash
+git init
 ```
-Install pip if you dont have by 
-```
-sudo apt-get install python-pip
-```
-Then install django by 
-```
-sudo pip install django
+```bash
+git remote add origin <your-repository-url>
 ```
 
-### Running the code 
-Just go into the code directory and type 
+#### Create and activate the virtual environment
+```bash
+python3 -m venv virtual
 ```
-python manage.py runserver
-```
-"My music" app will start on 127.0.0.1:8000 (Local Address).
- 
-### Applying Migrations on the Project 
-Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. They’re designed to be mostly automatic, but you’ll need to know when to make migrations, when to run them, and the common problems you might run into.
-Now suppose you want to change my album'm model or song's model and have your's you can simply change the code as you require and then run these commands
-```
-python manage.py makemigrations
-python manage.py migrate 
-python manage.py runserver
-```
-You can use *showmigration*  to list projects migration.
-### Have Fun ! 
 
-   
+```bash
+source virtual/bin/activate
+```
+
+#### Setting up environment variables
+Create a `.env` file and paste paste the following filling where appropriate:
+```
+SECRET_KEY='**'
+DEBUG=True
+DB_NAME='****'
+DB_USER='<your database name>'
+DB_PASSWORD='<password to your database>'
+DB_HOST='127.0.0.1'
+MODE='dev'
+ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
+DISABLE_COLLECTSTATIC=1
+```
+
+#### Install dependancies,
+Install dependancies that will create an environment for the app to run
+`pip install -r requirements.txt`
+
+#### Make and run migrations
+```bash
+python3 manage.py check
+python manage.py makemigrations 
+python3 manage.py sqlmigrate app 0001
+python3 manage.py migrate
+```
+
+#### Run the app
+```bash
+python3 manage.py runserver
+```
+Open [localhost:8000](http://127.0.0.1:8000/)
+
+
+
+## Testing the Application
+`python manage.py test music`
+## Technologies Used
+
+* [Python3.8](https://docs.python.org/3/)
+* Django 
+* JavaScript
+* Postgresql 
+* Boostrap
+* HTML
+* CSS
+
+## Contact Information   
+Please email me at ayuelgarang105@gmail.com for any question or contributions,
+  
+## License 
+
+[MIT](LICENSE.md)  <br>
+Copyright 2021 © by Gabriel Ayuel
